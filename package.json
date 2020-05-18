@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "minimal-ts-react",
+  "version": "0.0.0",
+  "description": "very small ts react project",
+  "main": "dist/index.html",
+  "scripts": {
+    "dev": "concurrently \"webpack --config webpack.config.js --watch\" \"lite-server\""
+  },
+  "author": "Jesse Jenks",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "lite-server": "^2.5.4",
+    "ts-loader": "^7.0.4",
+    "typescript": "^3.9.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
