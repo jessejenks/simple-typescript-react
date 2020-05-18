@@ -2,7 +2,9 @@ import React from "react";
 
 const App = () => {
     return (
-        <div>Simple Typescript React project</div>
+        <main>
+            <h1>Simple Typescript React Project</h1>
+        </main>
     );
 }
 
