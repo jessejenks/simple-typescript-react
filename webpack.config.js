@@ -3,7 +3,6 @@ const path = require("path");
 module.exports = {
     mode: "none",
     entry: "./src/index.tsx",
-    devtool: "inline-source-map",
     module: {
         rules: [
             {
@@ -15,13 +14,10 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     "style-loader",
+                    "css-modules-typescript-loader",
                     {
                         loader: "css-loader",
-                        options: {
-                            modules: {
-                                mode: "local",
-                            },
-                        },
+                        options: { modules: true }
                     },
                 ],
             },
